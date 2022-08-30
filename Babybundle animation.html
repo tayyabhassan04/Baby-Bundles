@@ -1,0 +1,170 @@
+
+
+<div class="wrapper-1">
+    
+    <div id="c1" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/1.webp"/></div>
+<div id="c2" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/2.webp"/></div>
+<div id="c3" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/3.webp"/></div>
+<div id="c4" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/4.webp"/></div>
+<div id="c5" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/5.webp"/></div>
+<div id="c6" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/6.webp"/></div>
+<div id="c7" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/7.webp"/></div>
+<div id="c8" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/8.webp"/></div>
+<div id="c9" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/9.webp"/></div>
+<div id="c10" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/10.webp"/></div>
+<div id="c11" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/13.webp"/></div>
+<div id="c12" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/14.webp"/></div>
+<div id="c13" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/13.webp"/></div>
+<div id="c14" class="image-1"><img src="https://babybundlenew.ropstam.dev/wp-content/uploads/2022/08/14.webp"/></div>
+</div>
+
+
+
+<style>
+    .wrapper-1{	
+    height: 80vh; 
+
+}
+
+.image-1 {
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 80%;
+    transition: 0.2s all ease;
+ /*text-align: center;*/
+}
+</style>
+<script>
+    jQuery(document).ready(function($) {
+
+	$("#c1").fadeIn(0);
+
+	
+	$(window).scroll(function() {
+	   
+	  var pos = $(window).scrollTop();
+	  console.log('check position', pos);
+       
+	  if (pos < 100) {
+	    hideAll("c1");
+	    $("#c1").fadeIn(0);
+	     $(".image-1").css("top", "-8%");
+	     $(".image-1").css("left", "75%");
+	   $("#animation_wrapper").css("visibility", "hidden");
+	   
+	   $("#static_image1").css("visibility", "visible");
+	   $("#static_image1").css("opacity", "1");
+	 $("#static_image1").css("transition-duration", "1s");
+	  }
+	  if (pos > 100 && pos < 350) {
+	    hideAll("c2");
+	    $("#c2").fadeIn(0);
+	    $(".image-1").css("top", "15%");
+	    $(".image-1").css("left", "70%");
+	    $("#animation_wrapper").css("visibility", "visible");
+	    $("#static_image1").css("visibility", "hidden");
+	     $("#static_image1").css("opacity", "0");
+	   
+	    
+	  }
+	    if (pos > 350 && pos < 400) {
+	    hideAll("c3");
+	    $("#c3").fadeIn(0);
+	    $(".image-1").css("top", "30%");
+	    $(".image-1").css("left", "65%");
+	    
+	  }
+	    if (pos > 400 && pos < 450) {
+	    hideAll("c4");
+	    $("#c4").fadeIn(0);
+	    $(".image-1").css("top", "40%");
+	    $(".image-1").css("left", "60%");
+	  }
+	      if (pos > 450 && pos < 500) {
+	    hideAll("c6");
+	    $("#c6").fadeIn(0);
+	    $(".image-1").css("top", "50%");
+	    $(".image-1").css("left", "55%");
+	  }
+	      if (pos > 500 && pos < 550) {
+	    hideAll("c7");
+	    $("#c7").fadeIn(0);
+	    $(".image-1").css("top", "60%");
+	    $(".image-1").css("left", "50%");
+	  }
+	      if (pos > 550 && pos < 600) {
+	    hideAll("c8");
+	    $("#c8").fadeIn(0);
+	    $(".image-1").css("top", "60%");
+	    $(".image-1").css("left", "45%");
+	  }
+	      if (pos > 600 && pos < 650) {
+	    hideAll("c9");
+	    $("#c9").fadeIn(0);
+	    $(".image-1").css("top", "70%");
+	    $(".image-1").css("left", "40%");
+	  }
+	       if (pos > 650 && pos < 700) {
+	    hideAll("c10");
+	    $("#c10").fadeIn(0);
+	    $(".image-1").css("top", "70%");
+	    $(".image-1").css("left", "35%");
+	    
+	  }
+	      
+	  if (pos > 700 && pos < 750) {
+	    hideAll("c11");
+	    $("#c11").fadeIn(0);
+	    $(".image-1").css("top", "80%");
+	    $(".image-1").css("left", "30%");
+	    
+	  }
+	    if (pos > 750 && pos < 800) {
+	    hideAll("c12");
+	    $("#c12").fadeIn(0);
+	    $(".image-1").css("top", "80%");
+	    $(".image-1").css("left", "25%");
+	    
+	  }
+	  
+	  	  if (pos > 800 && pos < 850) {
+	    hideAll("c13");
+	    $("#c11").fadeIn(0);
+	    $(".image-1").css("top", "90%");
+	    $(".image-1").css("left", "20%");
+	     $("#animation_wrapper").css("visibility", "visible");
+	    $("#shop_code").css("visibility", "hidden");
+	    $("#shop_code").css("opacity", "0");
+	  }
+	  
+	     if (pos > 850 && pos < 900) {
+	    hideAll("c14");
+	    $("#c12").fadeIn(0);
+	    $(".image-1").css("top", "90%");
+	    $(".image-1").css("left", "15%");
+	    $("#animation_wrapper").css("visibility", "hidden");
+	    
+	    $("#shop_code").css("visibility", "visible");
+	      $("#shop_code").css("opacity", "1");
+	   $("#shop_code").css("transition-duration", "1s");
+	    
+	  }
+	  
+	
+	  
+	});
+	
+	function hideAll(exceptMe) {
+	  jQuery(".image-1").each(function(i) {
+	    if ($(this).attr("id") == exceptMe) return;
+	    jQuery(this).fadeOut(0);
+	  });
+	}
+
+
+});
+
+
+</script>
