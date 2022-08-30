@@ -1,0 +1,190 @@
+
+
+
+    <div class="testimonial-section">
+       
+        <div class="testimonial">
+            <div class="content active" id="tab1">
+                <p>It was a very good experience
+                <br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. urpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu</p>
+                <p>Sally, Web Desginer</p>
+                
+            </div>
+            <div class="content" id="tab2">
+               <p>It was a very good experience
+                <br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. urpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu</p>
+                <p>Sally, Web Desginer</p>
+            </div>
+            <div class="content" id="tab3">
+                <p>It was a very good experience
+                <br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. urpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu</p>
+                <p>Sally, Web Desginer</p>
+            </div>
+            <div class="content" id="tab4">
+               <p>It was a very good experience
+                <br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pefdfdllentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. urpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu</p>
+                <p>Sally, Web Desginer</p>
+            </div>
+        </div>
+         <div class="testimonial-pic">
+             
+            <img class="active" src="/wp-content/uploads/2022/07/Rectangle-17.png" data-alt="tab1">
+            
+            <img src="/wp-content/uploads/2022/07/Rectangle-16.png" data-alt="tab2">
+            <img src="/wp-content/uploads/2022/07/Rectangle-17.png" data-alt="tab3">
+            <img src="/wp-content/uploads/2022/07/Rectangle-16.png" data-alt="tab4">
+        </div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">
+    <img src="/wp-content/uploads/2022/08/arrow1.png"></a>
+<a class="next" onclick="plusSlides(1)"><img src="/wp-content/uploads/2022/08/arrow-2.png"></a>
+<style>
+    
+.testimonial-section {
+    
+    padding: 20px;
+    border-radius: 10px;
+      
+}
+
+.testimonial-section h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.testimonial-section h1 span {
+    color: crimson;
+}
+
+.testimonial-pic {
+	height:200px;
+    padding:2%;
+	display:flex;
+	flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+   width: 100%;
+}
+
+.testimonial-pic img {
+    width: 80px;
+     opacity: 0.5;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.testimonial-pic img.active {
+   
+    width: 150px;
+    opacity: 1;
+    border-radius: 50%;
+    
+}
+
+.testimonial {
+    background: #FFEDF1;
+    padding: 2%;
+    /*border: 1px dashed #92635C;*/
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.testimonial .content {
+    display: none;
+}
+
+.testimonial .content.active {
+    display: block;
+}
+
+.testimonial .content p:nth-child(2) {
+    font-weight: bold;
+	    color: #92635C;
+}
+.testimonial .content p {
+    text-align: center;
+    font-weight: 400;
+	color:#000;
+	font-family: Azo Sans;
+}
+.testimonial .content p
+.testimonial .content span {
+    font-weight: 400;
+	color:#929292;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next{
+    right: 5%;
+}
+.prev{
+    left: 5%;
+}
+
+
+</style>
+    <script>
+        
+        jQuery('.testimonial-pic img').click(function () {
+            jQuery(this).addClass('active')
+           jQuery(this).siblings().removeClass('active')
+
+            jQuery('.testimonial .content').removeClass('active')
+            jQuery('#' + jQuery(this).attr('data-alt')).addClass('active')
+
+            // tab1  ==  $(this).attr('data-alt')
+        });
+        
+        function plusSlides(direction)  {
+            
+            var content_id = jQuery(".testimonial-pic .active").attr("data-alt");
+            
+            if(content_id=='tab4' && direction==1){
+                jQuery(".testimonial-pic img").removeClass('active');
+                jQuery('[data-alt=tab1]').addClass('active');
+            } else if(content_id=='tab1' && direction==-1) {
+                jQuery(".testimonial-pic img").removeClass('active');
+                jQuery('[data-alt=tab4]').addClass('active');
+            } else {
+                //alert(content_id);
+                
+                //jQuery(this).addClass('active')
+               jQuery(".testimonial-pic img").removeClass('active');
+               if(direction==1){
+                    jQuery('[data-alt=' + content_id + ']').next().addClass('active');
+               } else {
+                   jQuery('[data-alt=' + content_id + ']').prev().addClass('active');
+               }
+            }
+ 
+            jQuery('.testimonial .content').removeClass('active')
+            jQuery('#' + content_id).addClass('active')
+            
+        }
+        
+        
+        
+ 
+    </script>
